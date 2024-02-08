@@ -1,0 +1,15 @@
+/*Mobil telefon som defualt*/
+body{
+    display: grid;
+    grid-template-columns: ;
+    grid-template-rows: ;
+}
+
+@media only screen and (min-width: 1007px){ /*Paddor*/
+    
+}
+
+@media only screen and (min-width: 1008px){ /*Desktop*/
+    
+}
+
