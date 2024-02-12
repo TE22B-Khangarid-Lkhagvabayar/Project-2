@@ -1,8 +1,63 @@
 /*Mobil telefon som defualt*/
 body{
-    display: grid;
-    grid-template-columns: ;
-    grid-template-rows: ;
+    display: flex;
+    flex-direction: column;
+    background-image: url("/img/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk5Ni0wMDlfMS1rcm9pcjRkay5qcGc.webp");
+}
+
+main{
+    overflow: auto;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: wheat;
+    opacity: 1;
+    min-height: 8vh;
+}
+
+.logo{
+    min-height: 5vh;
+    min-width: 5vh;
+    background-image: url(/img/d4fytdg-62aa8be5-7c43-4112-9000-96e97a23ff3f.png);
+    background-size: 100%; /*för att bilden ska få plats i diven*/
+    margin: auto;
+    padding: auto;
+}
+
+.region button{
+    background-color: brown;
+    color: black;
+    padding: 1px 1px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.region a{
+    display: block;
+    color: black;
+    text-decoration: none;
+
+}
+
+.region .regions{
+    display: none;
+    position: absolute; /* allt ska få plats i*/ 
+    background-color: azure;
+    min-width: 100px;
+}
+
+.region:hover .regions{
+    display: block;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 @media only screen and (min-width: 1007px){ /*Paddor*/
@@ -13,3 +68,9 @@ body{
     
 }
 
+/*body{
+        display: grid;
+        grid-template-columns:  2fr  2fr 2fr  ; 
+        grid-template-rows: 3fr 25fr 2fr  ;
+        height: 100vh;
+    }*/
