@@ -6,31 +6,36 @@ body{
 }
 
 main{
-    overflow: auto;
+    /* overflow: auto; */
+    max-width: 99vw;
 }
 
 nav{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    background-color: wheat;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(220, 220, 220, 0.4);
     opacity: 1;
-    min-height: 8vh;
+    max-height: 5vh;
+
+    border-radius: 8%;
+    margin:0px;
+    padding: 0px;
 }
 
 .logo{
     min-height: 5vh;
     min-width: 5vh;
-    background-image: url(/img/d4fytdg-62aa8be5-7c43-4112-9000-96e97a23ff3f.png);
+    background-image: url(/img/ytdydyfgfcifouyg.png);
     background-size: 100%; /*för att bilden ska få plats i diven*/
-    margin: auto;
-    padding: auto;
+    margin: 0px;
+    padding: 0px;
 }
 
 .region button{
-    background-color: brown;
+    background-color: rgba (145, 126, 18, 0.8);
     color: black;
-    padding: 1px 1px;
     border: none;
     cursor: pointer;
 
@@ -54,12 +59,77 @@ nav{
     display: block;
 }
 
+.search label{
+    display: block;
+    height: 1px;
+}
+
+.help button{
+    margin-top: 50%;
+}
+
+.cart button{
+    margin-top: 50%;
+}
+
+main{
+display: flex;
+flex-direction: column;
+height: 82vh;
+}
+
+.catogories{
+    background-color: rgba(220, 220, 220, 0.4);
+    height: 80vh;
+    margin: 5%;
+    border-color: red;
+    border-radius: 4%;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+.produkt{
+    min-height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+            
+.prod_info{
+
+
+}
+
+h2, p, button *{
+    margin: 0px;
+}
+.produkt img{
+   
+    max-height: 85px;
+    /* margin-left: 20vh;
+    margin-top: -35vh; */
+}
+
+.catogories button{
+
+    /* margin-top: -10vh; */
+}
+
+
 footer{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    background-color: rgba(220, 220, 220, 0.4);
+    min-height: 8vh;
+    border-radius: 8%;
 }
 
+.catogories img{
+    
+}
 @media only screen and (min-width: 1007px){ /*Paddor*/
     
 }
@@ -74,3 +144,9 @@ footer{
         grid-template-rows: 3fr 25fr 2fr  ;
         height: 100vh;
     }*/
+
+    input{
+        font-size: 24px;
+        height: 20px;
+        max-width: 110px;
+    }
