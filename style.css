@@ -38,6 +38,7 @@ nav{
     color: black;
     border: none;
     cursor: pointer;
+    margin-left: 0px;  /*sätter kloten i mitten av diven*/ 
 
 }
 
@@ -65,11 +66,11 @@ nav{
 }
 
 .help button{
-    margin-top: 50%;
+    margin-top: 0%;
 }
 
 .cart button{
-    margin-top: 50%;
+    margin-top: 0%;
 }
 
 main{
@@ -94,7 +95,7 @@ height: 82vh;
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    /*justify-content: space-around;*/ /* Den ger alla element lika stor gap mellan varandra, gör allt osymetriskt*/
 }
             
 .prod_info{
@@ -102,14 +103,17 @@ height: 82vh;
 
 }
 
-h2, p, button *{
+.catogories h2, p, button {
     margin: 0px;
+    margin-left: 20px;
 }
+
 .produkt img{
    
     max-height: 85px;
     /* margin-left: 20vh;
     margin-top: -35vh; */
+    margin-left: 100px;
 }
 
 .catogories button{
@@ -130,23 +134,45 @@ footer{
 .catogories img{
     
 }
-@media only screen and (min-width: 1007px){ /*Paddor*/
+@media screen and (min-width: 820px){ /*Paddor*/
+    
+    .catogories div  {
+        min-height: 200px;
+    }
+
+    .catogories h2, p, button {
+        margin: 0px;
+        margin-left: 100px;
+        margin-top: 20px;
+    }
+    
+    .produkt img{
+       
+        max-height: 85px;
+        /* margin-left: 20vh;
+        margin-top: -35vh; */
+        margin-left: 180px;
+        min-height: 200px;
+
+    }
+
     
 }
 
-@media only screen and (min-width: 1008px){ /*Desktop*/
+@media screen and (min-width: 1008px){ /*Desktop*/
     
-}
-
-/*body{
+    /*body{
         display: grid;
         grid-template-columns:  2fr  2fr 2fr  ; 
         grid-template-rows: 3fr 25fr 2fr  ;
         height: 100vh;
     }*/
 
-    input{
-        font-size: 24px;
-        height: 20px;
-        max-width: 110px;
+    nav button {
+
+        margin-left: 0px;
+
     }
+
+    
+}
