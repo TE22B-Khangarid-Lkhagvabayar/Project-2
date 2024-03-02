@@ -52,7 +52,7 @@ nav{
 .region .regions{
     display: none;
     position: absolute; /* allt ska få plats i*/ 
-    background-color: azure;
+    background-color: rgb(255, 255, 255);
     min-width: 100px;
 }
 
@@ -61,16 +61,23 @@ nav{
 }
 
 .search label{
-    display: block;
+    display: block; /*up och ner*/
     height: 1px;
 }
 
 .help button{
-    margin-top: 0%;
+    margin-left: 0;
 }
 
 .cart button{
+    margin-left: 0;
+}
+
+nav button{
     margin-top: 0%;
+    cursor: pointer; 
+    border: none;
+    background: transparent;
 }
 
 main{
@@ -88,6 +95,10 @@ height: 82vh;
     display: flex;
     flex-direction: column;
     overflow: scroll;
+}
+
+.catogories::-webkit-scrollbar{
+    width: 0; /*tar bort scrollbaren*/
 }
 
 .produkt{
@@ -127,13 +138,25 @@ footer{
     flex-direction: row;
     justify-content: space-evenly;
     background-color: rgba(220, 220, 220, 0.4);
-    min-height: 8vh;
+    max-height: 8vh;
     border-radius: 8%;
 }
 
-.catogories img{
+footer div{
+    margin: 0;
+    
     
 }
+
+footer img{
+    margin: 0;
+    margin-top: 15px;
+    margin-right: 15px;
+    max-height: 40px;
+    border: none;
+}
+
+
 @media screen and (min-width: 820px){ /*Paddor*/
     
     .catogories div  {
@@ -146,6 +169,10 @@ footer{
         margin-top: 20px;
     }
     
+    .region button{
+        margin-top: 0px;
+    }
+
     .produkt img{
        
         max-height: 85px;
@@ -154,6 +181,20 @@ footer{
         margin-left: 180px;
         min-height: 200px;
 
+    }
+
+    footer div{
+        margin: 0;
+        
+        
+    }
+    
+    footer img{
+        margin: 0;
+        margin-top: 15px;
+        margin-right: 100px;
+        max-height: 40px;
+        border: none;
     }
 
     
@@ -168,11 +209,62 @@ footer{
         height: 100vh;
     }*/
 
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
     nav button {
 
-        margin-left: 0px;
+        margin-left: 0;
 
     }
+
+    .catogories{
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+        margin: 0;
+        max-width: 800px;
+        max-height: auto;
+        align-self: center; /*mitten av body */
+
+    }
+
+    .catogories img{
+        
+        max-height: 100px;
+        max-width: 210px;
+        margin: 0%;
+    }
+    
+    .catogories .prod_info{
+
+        margin-left: -90px; 
+    }
+
+    .produkt img {
+        max-height: 1vh;
+        
+    }
+
+    
+
+    footer div{
+        margin: 0;
+        
+        
+    }
+    
+    footer img{
+        display: flex;
+        margin-bottom: 100px;
+        
+        
+    }
+
 
     
 }
