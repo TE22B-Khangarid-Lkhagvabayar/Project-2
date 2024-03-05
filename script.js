@@ -3,11 +3,11 @@ let closeButton = document.querySelector(".closeB");
 
 //event lyssnare 
 cartButton.addEventListener("click", ()=> {
-    body.classList.toggle("cartActive");
+    document.body.classList.toggle("cartActive");
 })
 
 closeButton.addEventListener("click", ()=> {
-    body.classList.toggle("cartActive");
+    document.body.classList.toggle("cartActive");
 })
 
 
